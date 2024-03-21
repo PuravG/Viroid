@@ -1,4 +1,4 @@
-INFERNAL1/a [1.1.4 | Dec 2020]
+INFERNAL1/a [1.1.5 | Sep 2023]
 NAME     DVR4
 STATES   267
 NODES    71
@@ -11,6 +11,7 @@ MAP      yes
 DATE     Fri Mar 19 21:38:35 2021
 COM      [1] cmbuild DVR4.cm DVR4.sto
 COM      [2] cmcalibrate DVR4.cm
+COM      [3] cmcalibrate --cpu 8 dvr5.cm
 PBEGIN   0.05
 PEND     0.05
 WBETA    1e-07
@@ -368,7 +369,7 @@ CM
                                              [ END    70 ]      -      - - - - -
      E   266   265 3    -1     0     0     0     0     0                                                 
 //
-HMMER3/f [3.3.2 | Nov 2020]
+HMMER3/f [3.4 | Aug 2023]
 NAME  DVR4
 LENG  86
 MAXL  154
@@ -650,7 +651,7 @@ HMM          A        C        G        U
           1.38629  1.38629  1.38629  1.38629
           0.00264  5.93822        *  1.46634  0.26236  0.00000        *
 //
-INFERNAL1/a [1.1.4 | Dec 2020]
+INFERNAL1/a [1.1.5 | Sep 2023]
 NAME     hairpin-meta
 DESC     hairpin ribozymes found in metatranscriptomes, touched-up version of initial alignment
 STATES   279
@@ -664,6 +665,7 @@ MAP      yes
 DATE     Fri Jun 11 17:34:20 2021
 COM      [1] cmbuild hairpin1.cm hairpin1_meta.sto
 COM      [2] cmcalibrate hairpin1.cm
+COM      [3] cmcalibrate --cpu 8 dvr5.cm
 PBEGIN   0.05
 PEND     0.05
 WBETA    1e-07
@@ -679,7 +681,7 @@ NULL     0.000  0.000  0.000  0.000
 EFP7GF   -18.9442 0.71994
 ECMLC    0.57975    -9.19114     0.48291     1600000      327289  0.003666
 ECMGC    0.42746   -14.20466    -3.21185     1600000       43935  0.009104
-ECMLI    0.52033    -6.36620     3.59774     1600000      214195  0.005602
+ECMLI    0.52033    -6.36615     3.59774     1600000      214189  0.005603
 ECMGI    0.45557    -7.26208     2.51400     1600000       34377  0.011636
 CM
                                              [ ROOT    0 ]      -      - - - - -
@@ -1031,7 +1033,7 @@ CM
                                              [ END    68 ]      -      - - - - -
      E   278   277 3    -1     0     0     0     0     0                                                 
 //
-HMMER3/f [3.3.2 | Nov 2020]
+HMMER3/f [3.4 | Aug 2023]
 NAME  hairpin-meta
 DESC  hairpin ribozymes found in metatranscriptomes, touched-up version of initial alignment
 LENG  90
@@ -1326,7 +1328,7 @@ HMM          A        C        G        U
           1.38629  1.38629  1.38629  1.38629
           0.00116  6.75809        *  1.46634  0.26236  0.00000        *
 //
-INFERNAL1/a [1.1.4 | Dec 2020]
+INFERNAL1/a [1.1.5 | Sep 2023]
 NAME     hhrbz_dv4
 STATES   219
 NODES    55
@@ -1339,6 +1341,7 @@ MAP      yes
 DATE     Mon Mar 29 16:27:22 2021
 COM      [1] cmbuild hhrbz_dv4.cm hhrbz_dv4.sto
 COM      [2] cmcalibrate hhrbz_dv4.cm
+COM      [3] cmcalibrate --cpu 8 dvr5.cm
 PBEGIN   0.05
 PEND     0.05
 WBETA    1e-07
@@ -1632,7 +1635,7 @@ CM
                                              [ END    54 ]      -      - - - - -
      E   218   217 3    -1     0     0     0     0     0                                                 
 //
-HMMER3/f [3.3.2 | Nov 2020]
+HMMER3/f [3.4 | Aug 2023]
 NAME  hhrbz_dv4
 LENG  70
 MAXL  226
@@ -1866,7 +1869,7 @@ HMM          A        C        G        U
           1.38629  1.38629  1.38629  1.38629
           0.00018  8.64293        *  1.46634  0.26236  0.00000        *
 //
-INFERNAL1/a [1.1.4 | Dec 2020]
+INFERNAL1/a [1.1.5 | Sep 2023]
 NAME     twister-P1
 ACC      RF03160
 DESC     type-P1 twister ribozyme
@@ -1881,6 +1884,7 @@ MAP      yes
 DATE     Tue Feb  9 11:30:15 2021
 COM      [1] cmbuild twister_p1.cm twister_p1.sto
 COM      [2] cmcalibrate twister_p1.cm
+COM      [3] cmcalibrate --cpu 8 dvr5.cm
 PBEGIN   0.05
 PEND     0.05
 WBETA    1e-07
@@ -2173,7 +2177,7 @@ CM
                                              [ END    56 ]      -      - - - - -
      E   212   211 3    -1     0     0     0     0     0                                                 
 //
-HMMER3/f [3.3.2 | Nov 2020]
+HMMER3/f [3.4 | Aug 2023]
 NAME  twister-P1
 ACC   RF03160
 DESC  type-P1 twister ribozyme
@@ -2403,7 +2407,7 @@ HMM          A        C        G        U
           1.38629  1.38629  1.38629  1.38629
           0.00006  9.68861        *  1.46634  0.26236  0.00000        *
 //
-INFERNAL1/a [1.1.4 | Dec 2020]
+INFERNAL1/a [1.1.5 | Sep 2023]
 NAME     VS
 STATES   574
 NODES    128
@@ -2416,6 +2420,7 @@ MAP      yes
 DATE     Thu Jan 27 16:27:47 2022
 COM      [1] cmbuild -F VS.cm VS.sto
 COM      [2] cmcalibrate VS.cm
+COM      [3] cmcalibrate --cpu 8 dvr5.cm
 PBEGIN   0.05
 PEND     0.05
 WBETA    1e-07
@@ -3137,7 +3142,7 @@ CM
                                              [ END   101 ]      -      - - - - -
      E   573   572 3    -1     0     0     0     0     0                                                 
 //
-HMMER3/f [3.3.2 | Nov 2020]
+HMMER3/f [3.4 | Aug 2023]
 NAME  VS
 LENG  185
 MAXL  316
@@ -3716,7 +3721,7 @@ HMM          A        C        G        U
           1.38629  1.38629  1.38629  1.38629
           0.03279  3.43399        *  1.46634  0.26236  0.00000        *
 //
-INFERNAL1/a [1.1.4 | Dec 2020]
+INFERNAL1/a [1.1.5 | Sep 2023]
 NAME     S299
 STATES   1397
 NODES    367
@@ -3729,6 +3734,7 @@ MAP      yes
 DATE     Thu Jan 27 14:20:09 2022
 COM      [1] cmbuild -F S299.cm S299.sto
 COM      [2] cmcalibrate S299.cm
+COM      [3] cmcalibrate --cpu 8 dvr5.cm
 PBEGIN   0.05
 PEND     0.05
 WBETA    1e-07
@@ -5512,7 +5518,7 @@ CM
                                              [ END   287 ]      -      - - - - -
      E  1396  1395 3    -1     0     0     0     0     0                                                 
 //
-HMMER3/f [3.3.2 | Nov 2020]
+HMMER3/f [3.4 | Aug 2023]
 NAME  S299
 LENG  446
 MAXL  628
