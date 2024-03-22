@@ -12,6 +12,7 @@ DATE     Fri Mar 19 21:38:35 2021
 COM      [1] cmbuild DVR4.cm DVR4.sto
 COM      [2] cmcalibrate DVR4.cm
 COM      [3] cmcalibrate --cpu 8 dvr5.cm
+COM      [4] cmcalibrate --cpu 64 DVR4.cm
 PBEGIN   0.05
 PEND     0.05
 WBETA    1e-07
